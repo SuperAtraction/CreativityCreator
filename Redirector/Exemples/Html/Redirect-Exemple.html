@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<div id="Title">
+		<title>
+		Redirection...
+	</title>
+	</div>
+	<script type="text/javascript">
+		var site = "https://github.com/SuperAtraction"; //Changer le contenu de la variable pour changer le site
+
+		var Title = document.getElementById("Title");
+		Title.innerHTML = "<Title>Redirection vers "+site+"</Title>";
+
+		function load()  //Fonction de redirection
+		{
+			location.href=site;
+		}
+	</script>
+</head>
+<body onload="load();">
+Si vous n'êtes par redirigé, <!--Remplacer https://github.com/SuperAtraction par le site de la variable site--><a href="https://github.com/SuperAtraction">Cliquez ici</a>
+</body>
+</html>
