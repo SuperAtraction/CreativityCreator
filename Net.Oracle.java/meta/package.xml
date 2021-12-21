@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package>
-    <DisplayName>Java</DisplayName>
-    <Description>Installation java 64bits.</Description>
-    <Version>1.8</Version>
-    <ReleaseDate>2021-12-15</ReleaseDate>
-    <Default>false</Default>
-    <Script>installscript.qs</Script>
-</Package>

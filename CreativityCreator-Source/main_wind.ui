@@ -70,6 +70,38 @@
     <string>Vous permet d'accéder à l'IDE de CreativityCreator</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="About">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>0</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Settings">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>550</y>
+     <width>101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Paramètres</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

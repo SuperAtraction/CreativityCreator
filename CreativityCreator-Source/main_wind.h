@@ -20,6 +20,8 @@ private slots:
 
     void on_IDE_clicked();
 
+    void on_About_clicked();
+
 private:
     Ui::Main_Wind *ui;
 };
