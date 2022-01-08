@@ -1,11 +1,13 @@
-#include "main_wind.h"
+#include "bootloader.h"
 
 #include <QApplication>
+
+#include "main.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Main_Wind w;
+    BootLoader w;
     w.show();
     return a.exec();
 }

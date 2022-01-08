@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BootLoader</class>
+ <widget class="QWidget" name="BootLoader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CreativityCreator - BootLoader</string>
+  </property>
+  <widget class="QLabel" name="Load_effect">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>201</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#00ff84;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-size:36pt; color:#518f86;&quot;&gt;reativity&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#00ff87;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-size:36pt; color:#518f86;&quot;&gt;reator&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; color:#ffaa00;&quot;&gt;Bootloader&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Load_Text">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>521</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Loading QSerial...</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="LoadBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>541</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LoadBtn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Démarrer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Stop">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>310</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Arrêter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Update">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>310</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mettre à jour</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Settings">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>0</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Paramètres</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MaintenanceTool">
+   <property name="geometry">
+    <rect>
+     <x>339</x>
+     <y>470</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Ouvrir l'outil de Maintenance(Cela arrêtera CreativityCreator)</string>
+   </property>
+   <property name="text">
+    <string>Ouvrir l'outil de Maintenace</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Advenced">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Avancé...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="About">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </widget>
+  <zorder>Settings</zorder>
+  <zorder>Load_effect</zorder>
+  <zorder>Load_Text</zorder>
+  <zorder>LoadBar</zorder>
+  <zorder>LoadBtn</zorder>
+  <zorder>Stop</zorder>
+  <zorder>Update</zorder>
+  <zorder>MaintenanceTool</zorder>
+  <zorder>Advenced</zorder>
+  <zorder>About</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

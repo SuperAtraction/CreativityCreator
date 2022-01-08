@@ -1,7 +1,7 @@
 #include "main_wind.h"
 #include "ui_main_wind.h"
 #include "createinstaller.h"
-#include "ide.h"
+#include "create.h"
 #include <QDir>
 #include <QFile>
 #include <QTextStream>
@@ -12,38 +12,14 @@
 #include <QDesktopServices>
 #include <QThread>
 #include "about.h"
+#include "elec.h"
+#include "settings.h"
 
 Main_Wind::Main_Wind(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Main_Wind)
 {
     ui->setupUi(this);
-    bool up = true;
-    if(up){
-    system("\"wget.exe https://github.com/SuperAtraction/CreativityCreator/releases/download/Alpha0.02/VersionReleaseCreativityCreator.ver\"");
-    QFile *vr = new QFile("VersionRelease.ver");
-    QFile vrn("VersionReleaseCreativityCreator.ver");
-    if(!vr->open(QIODevice::ReadOnly | QIODevice::Text) || !vrn.open(QIODevice::ReadOnly | QIODevice::Text))
-    {
-        QMessageBox::warning(this, "Accès refusé", "Accès refusé ! Passage update...");
-        up=false;
-    }
-    QTextStream vrq(&*vr);
-    QTextStream vrnq(&vrn);
-    if(QString(vrq.readLine()) != QString(vrnq.readLine()))
-    {
-        vrn.remove();
-        vrn.close();
-        QMessageBox::information(this, "Update", "Updating...");
-        system("\"wget.exe https://github.com/SuperAtraction/CreativityCreator/raw/main/InstallCreativityCreator.exe\" ");
-        system("InstallCreativityCreator.exe");
-        exit(0);
-    }
-    vrn.remove();
-    vrn.close();
-    }
-    //Fin processus d'update
-    this->setWindowTitle("Creativity Creator");
     QDir *Local = new QDir("C:/CreativityCreator/");
     QFile *initialize = new QFile("Initial.sesi");
     QFile *Session = new QFile(Local->path()+"/Session.sess");
@@ -121,6 +97,10 @@ Main_Wind::Main_Wind(QWidget *parent) :
         QTextStream fluxi(&*initialize);
         fluxi << "N";
         initialize->close();
+        QPixmap Create("Textures/Text/New.png");
+        ui->Create->setIcon(Create);
+        QPixmap Opene("Textures/Text/Open.png");
+        ui->Open->setIcon(Opene);
     }
 }
 
@@ -129,23 +109,26 @@ Main_Wind::~Main_Wind()
     delete ui;
 }
 
-void Main_Wind::on_commandLinkButton_clicked()
-{
-    this->setVisible(false);
-    CreateInstaller *w = new CreateInstaller();
-    w->show();
-}
-
-void Main_Wind::on_IDE_clicked()
-{
-    this->setVisible(false);
-    IDE *w = new IDE();
-    w->show();
-}
-
 void Main_Wind::on_About_clicked()
 {
     About *w = new About();
     w->show();
 }
 
+void Main_Wind::on_Import_clicked()
+{
+
+}
+
+void Main_Wind::on_Settings_clicked()
+{
+    Settings *w = new Settings();
+    w->show();
+}
+
+void Main_Wind::on_Create_clicked()
+{
+    Create *w = new Create();
+    w->show();
+    this->setVisible(false);
+}

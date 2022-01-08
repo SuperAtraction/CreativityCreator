@@ -16,11 +16,14 @@ public:
     ~Main_Wind();
 
 private slots:
-    void on_commandLinkButton_clicked();
-
-    void on_IDE_clicked();
 
     void on_About_clicked();
+
+    void on_Import_clicked();
+
+    void on_Settings_clicked();
+
+    void on_Create_clicked();
 
 private:
     Ui::Main_Wind *ui;

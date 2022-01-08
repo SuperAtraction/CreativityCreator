@@ -6,40 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>633</width>
-    <height>620</height>
+    <width>439</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Creativity Creator</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(70, 70, 70);</string>
   </property>
-  <widget class="QCommandLinkButton" name="commandLinkButton">
+  <widget class="QCommandLinkButton" name="Import">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>260</x>
+     <y>60</y>
      <width>181</width>
-     <height>41</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Importer un Projet/Fichier Depuis Internet&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Créer un installer up&amp;&amp;l</string>
+    <string>Importer</string>
+   </property>
+   <property name="description">
+    <string>Permet d'importer des projets/Fichiers</string>
    </property>
   </widget>
   <widget class="QLabel" name="Name">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>10</y>
+     <x>150</x>
+     <y>0</y>
      <width>101</width>
      <height>16</height>
     </rect>
@@ -51,29 +54,33 @@
     <string>Creativity Creator</string>
    </property>
   </widget>
-  <widget class="QCommandLinkButton" name="IDE">
+  <widget class="QCommandLinkButton" name="Open">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>30</y>
+     <x>260</x>
+     <y>130</y>
      <width>181</width>
-     <height>71</height>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>IDE</string>
+    <string>Ouvrir</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-CreativityCreator-Desktop_Qt_6_2_1_MinGW_64_bit-Release/release/Textures/Text/Open.PNG</normaloff>../build-CreativityCreator-Desktop_Qt_6_2_1_MinGW_64_bit-Release/release/Textures/Text/Open.PNG</iconset>
    </property>
    <property name="description">
-    <string>Vous permet d'accéder à l'IDE de CreativityCreator</string>
+    <string>Ouvrir un projet .pro compatible Qt ou CreativityCreator</string>
    </property>
   </widget>
   <widget class="QPushButton" name="About">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>360</x>
      <y>0</y>
      <width>80</width>
      <height>21</height>
@@ -89,8 +96,8 @@
   <widget class="QPushButton" name="Settings">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>550</y>
+     <x>340</x>
+     <y>380</y>
      <width>101</width>
      <height>71</height>
     </rect>
@@ -101,6 +108,125 @@
    <property name="text">
     <string>Paramètres</string>
    </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="Create">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>220</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Créer</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-CreativityCreator-Desktop_Qt_6_2_1_MinGW_64_bit-Release/release/Textures/Text/New.PNG</normaloff>../build-CreativityCreator-Desktop_Qt_6_2_1_MinGW_64_bit-Release/release/Textures/Text/New.PNG</iconset>
+   </property>
+   <property name="description">
+    <string>Créer un Fichier/Projet compatible VisualStudio 2022, Qt ou CreativityCreator</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Recent">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>171</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="title">
+    <string>Récent</string>
+   </property>
+   <widget class="QCommandLinkButton" name="Recent1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>168</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proj1</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="Recent2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>168</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proj2</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="Recent3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>168</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proj3</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="Recent4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>168</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proj4</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="Recent5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>310</y>
+      <width>168</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proj5</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

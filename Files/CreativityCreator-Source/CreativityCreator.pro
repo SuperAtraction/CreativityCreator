@@ -1,6 +1,6 @@
+QT += core network
 QT       += core gui
 QT += serialport
-QT += network widgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,30 +12,53 @@ CONFIG += c++11
 
 SOURCES += \
     about.cpp \
+    advenced.cpp \
     arduinocreatewind.cpp \
+    bootloader.cpp \
+    computer.cpp \
+    create.cpp \
     createinstaller.cpp \
-    ide.cpp \
+    download.cpp \
+    elec.cpp \
     main.cpp \
     main_wind.cpp \
-    texteditor.cpp
+    settings.cpp \
+    texteditor.cpp \
+    widgetcomputer.cpp
 
 HEADERS += \
     Arduino_Connect.h \
+    ExeController.hpp \
     FuturLog.h \
+    ScriptCompiler.h \
+    TexturesArduino.h \
     about.h \
+    advenced.h \
     arduinocreatewind.h \
+    bootloader.h \
+    computer.h \
+    create.h \
     createinstaller.h \
-    ide.h \
+    download.h \
+    elec.h \
     main_wind.h \
-    texteditor.h
+    settings.h \
+    texteditor.h \
+    widgetcomputer.hpp
 
 FORMS += \
     about.ui \
+    advenced.ui \
     arduinocreatewind.ui \
+    bootloader.ui \
+    computer.ui \
+    create.ui \
     createinstaller.ui \
-    ide.ui \
+    elec.ui \
     main_wind.ui \
-    texteditor.ui
+    settings.ui \
+    texteditor.ui \
+    widgetcomputer.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
